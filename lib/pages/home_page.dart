@@ -1,4 +1,5 @@
 import 'package:bwa_chatty/pages/theme.dart';
+import 'package:bwa_chatty/widget/chat_tile.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -59,41 +60,18 @@ class HomePage extends StatelessWidget {
                       'Friends',
                       style: tittleTextStyle,
                     ),
-                    SizedBox(
-                      height: 16,
+                    ChatTile(
+                      '/images/friend1.png',
+                      'Joshuer',
+                      'Sorry, you’re not my ty...',
+                      'Now',
                     ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/images/friend1.png',
-                          height: 55,
-                          width: 55,
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Joshsuer',
-                              style: tittleTextStyle,
-                            ),
-                            Text(
-                              'Sorry, you’re not my ty...',
-                              style: subTittleTextStyle,
-                            ),
-                          ],
-                        ),
-                        Spacer(),
-                        Text(
-                          'Now',
-                          style: subTittleTextStyle.copyWith(
-                            color: blackColor,
-                          ),
-                        )
-                      ],
-                    )
+                    ChatTile(
+                      '/images/friend2.png',
+                      'Gabriella',
+                      'I saw it clearly and mig...',
+                      '2:30',
+                    ),
                   ],
                 ),
               ),
