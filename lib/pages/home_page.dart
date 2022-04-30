@@ -33,11 +33,70 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 2,
               ),
-              Text('Travel Freelancer',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: lightBlueColor,
-                  )),
+              Text(
+                'Travel Freelancer',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: lightBlueColor,
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(30),
+                decoration: BoxDecoration(
+                  color: whiteColor,
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(40),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Friends',
+                      style: tittleTextStyle,
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/friend1.png',
+                          height: 55,
+                          width: 55,
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Joshsuer',
+                              style: tittleTextStyle,
+                            ),
+                            Text(
+                              'Sorry, you’re not my ty...',
+                              style: subTittleTextStyle,
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        Text(
+                          'Now',
+                          style: subTittleTextStyle.copyWith(
+                            color: blackColor,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
