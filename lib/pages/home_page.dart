@@ -6,10 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(
-        'Home Page',
-        style: TextStyle(fontSize: 40),
-      ),
+      body: Image.asset('/images/profile_pic.png',),
     );
   }
 }
